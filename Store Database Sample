@@ -1,0 +1,27 @@
+CREATE TABLE store (id integer primary key,item TEXT, sku INTEGER, description TEXT, price INTEGER);
+
+INSERT INTO store VALUES
+(1, "bike", 123, "a bicycle", 100),
+(2, "car", 124, "a car", 246),
+(3, "bread", 140, "a loaf", 192),
+(4, "milk", 144, "a carton", 211),
+(5, "tea", 125, "a box of tea", 204),
+(6, "computer", 328, "a computer", 214),
+(7, "pen", 297, "a pen", 44),
+(8, "crayon", 261, "a crayon", 12),
+(9, "TV", 368, "a TV", 260),
+(10, "Control", 314, "a controller", 190),
+(11, "Glasses", 195, "a pair", 252),
+(12, "iPad", 222, "an iPad", 203),
+(13, "Mouse", 195, "a mouse", 247),
+(14, "Headphones", 218, "a set", 720),
+(15, "Keyboard", 199, "a keyboard", 180),
+(16, "Phone", 230, "a phone", 18);
+
+
+SELECT * FROM store;
+
+SELECT item, SKU, price FROM store WHERE price >= 100 ORDER BY  price;
+
+SELECT SUM(price) FROM store;
+
